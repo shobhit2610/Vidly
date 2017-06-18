@@ -186,15 +186,41 @@
     <Compile Include="Migrations\201706170707493_AddDataAnnotationtoCustomer.Designer.cs">
       <DependentUpon>201706170707493_AddDataAnnotationtoCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706170913263_AddingNametoMembershipType.cs" />
+    <Compile Include="Migrations\201706170913263_AddingNametoMembershipType.Designer.cs">
+      <DependentUpon>201706170913263_AddingNametoMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706170914148_UpdatedMembershipType.cs" />
+    <Compile Include="Migrations\201706170914148_UpdatedMembershipType.Designer.cs">
+      <DependentUpon>201706170914148_UpdatedMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706170942347_AddBirthdateStringLength.cs" />
+    <Compile Include="Migrations\201706170942347_AddBirthdateStringLength.Designer.cs">
+      <DependentUpon>201706170942347_AddBirthdateStringLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706171049084_AddNewFeildstoMovies.cs" />
+    <Compile Include="Migrations\201706171049084_AddNewFeildstoMovies.Designer.cs">
+      <DependentUpon>201706171049084_AddNewFeildstoMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706171102182_AddGenretoCustomer.cs" />
+    <Compile Include="Migrations\201706171102182_AddGenretoCustomer.Designer.cs">
+      <DependentUpon>201706171102182_AddGenretoCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706171104017_PopulateGenre.cs" />
+    <Compile Include="Migrations\201706171104017_PopulateGenre.Designer.cs">
+      <DependentUpon>201706171104017_PopulateGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-Lumen.css" />
@@ -257,10 +283,11 @@
     <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Customer\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Customer\CustomerForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -284,6 +311,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706170707493_AddDataAnnotationtoCustomer.resx">
       <DependentUpon>201706170707493_AddDataAnnotationtoCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706170913263_AddingNametoMembershipType.resx">
+      <DependentUpon>201706170913263_AddingNametoMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706170914148_UpdatedMembershipType.resx">
+      <DependentUpon>201706170914148_UpdatedMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706170942347_AddBirthdateStringLength.resx">
+      <DependentUpon>201706170942347_AddBirthdateStringLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706171049084_AddNewFeildstoMovies.resx">
+      <DependentUpon>201706171049084_AddNewFeildstoMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706171102182_AddGenretoCustomer.resx">
+      <DependentUpon>201706171102182_AddGenretoCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706171104017_PopulateGenre.resx">
+      <DependentUpon>201706171104017_PopulateGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
