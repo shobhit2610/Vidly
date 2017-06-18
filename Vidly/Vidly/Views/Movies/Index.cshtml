@@ -3,13 +3,23 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <h2>Movies</h2>
 
-<ul>
-    @foreach (var Movies in Model)
-    {
-        <li >@Movies.Name</li>
-    }
+<a href="~/Movies/New" class="btn btn-primary">Add New Movies</a>
+<table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>Movie</th>
+            <th>Genre</th>
+        </tr>
+    </thead>
+    <tbody>
 
-</ul>
+        @foreach (var Movie in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(Movie.Name, "Edit", "Movies", new { id = Movie.ID }, null)</td>
+                <td> @Movie.Genre.Name</td>
+            </tr>
+        }
+</table>

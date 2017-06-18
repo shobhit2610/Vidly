@@ -45,6 +45,7 @@ namespace Vidly.Controllers
 
             return View("CustomerForm",viewModel);
         }
+
         [HttpPost]
         public ActionResult Save(Customer customer)
         {
@@ -61,7 +62,7 @@ namespace Vidly.Controllers
                 customerInDb.IsSubscribedTo = customer.IsSubscribedTo;
 
             }
-            _context.SaveChanges();
+            _context.SaveChanges(); 
             return RedirectToAction("Index","Customer");
         }
 
