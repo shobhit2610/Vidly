@@ -194,6 +194,30 @@
     <Compile Include="Migrations\201706181029201_addgenretodb.Designer.cs">
       <DependentUpon>201706181029201_addgenretodb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706191639405_adddataannotations.cs" />
+    <Compile Include="Migrations\201706191639405_adddataannotations.Designer.cs">
+      <DependentUpon>201706191639405_adddataannotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706191644417_adddataannotations1.cs" />
+    <Compile Include="Migrations\201706191644417_adddataannotations1.Designer.cs">
+      <DependentUpon>201706191644417_adddataannotations1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706191713340_adddataannotations2.cs" />
+    <Compile Include="Migrations\201706191713340_adddataannotations2.Designer.cs">
+      <DependentUpon>201706191713340_adddataannotations2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706191722391_adddataannotations11.cs" />
+    <Compile Include="Migrations\201706191722391_adddataannotations11.Designer.cs">
+      <DependentUpon>201706191722391_adddataannotations11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706191811349_adddataannotations21.cs" />
+    <Compile Include="Migrations\201706191811349_adddataannotations21.Designer.cs">
+      <DependentUpon>201706191811349_adddataannotations21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706191812496_adddataannotations3.cs" />
+    <Compile Include="Migrations\201706191812496_adddataannotations3.Designer.cs">
+      <DependentUpon>201706191812496_adddataannotations3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -270,7 +294,7 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customer\CustomerForm.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
-    <Content Include="Views\Movies\New.cshtml" />
+    <Content Include="Views\Movies\Save.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -303,6 +327,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706181029201_addgenretodb.resx">
       <DependentUpon>201706181029201_addgenretodb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706191639405_adddataannotations.resx">
+      <DependentUpon>201706191639405_adddataannotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706191644417_adddataannotations1.resx">
+      <DependentUpon>201706191644417_adddataannotations1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706191713340_adddataannotations2.resx">
+      <DependentUpon>201706191713340_adddataannotations2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706191722391_adddataannotations11.resx">
+      <DependentUpon>201706191722391_adddataannotations11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706191811349_adddataannotations21.resx">
+      <DependentUpon>201706191811349_adddataannotations21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706191812496_adddataannotations3.resx">
+      <DependentUpon>201706191812496_adddataannotations3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
