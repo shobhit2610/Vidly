@@ -218,6 +218,18 @@
     <Compile Include="Migrations\201706191812496_adddataannotations3.Designer.cs">
       <DependentUpon>201706191812496_adddataannotations3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706211628219_changeDateaddedtoDatetime.cs" />
+    <Compile Include="Migrations\201706211628219_changeDateaddedtoDatetime.Designer.cs">
+      <DependentUpon>201706211628219_changeDateaddedtoDatetime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706211717599_changeDOBtoDatetime.cs" />
+    <Compile Include="Migrations\201706211717599_changeDOBtoDatetime.Designer.cs">
+      <DependentUpon>201706211717599_changeDOBtoDatetime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706301706324_changedatofreleasetodatetime.cs" />
+    <Compile Include="Migrations\201706301706324_changedatofreleasetodatetime.Designer.cs">
+      <DependentUpon>201706301706324_changedatofreleasetodatetime.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -225,6 +237,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -345,6 +358,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706191812496_adddataannotations3.resx">
       <DependentUpon>201706191812496_adddataannotations3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706211628219_changeDateaddedtoDatetime.resx">
+      <DependentUpon>201706211628219_changeDateaddedtoDatetime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706211717599_changeDOBtoDatetime.resx">
+      <DependentUpon>201706211717599_changeDOBtoDatetime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706301706324_changedatofreleasetodatetime.resx">
+      <DependentUpon>201706301706324_changedatofreleasetodatetime.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
