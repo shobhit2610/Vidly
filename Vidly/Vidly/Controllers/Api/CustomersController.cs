@@ -70,7 +70,7 @@ namespace Vidly.Controllers.Api
 
         // Delete Customer
         [HttpDelete]
-        public void DeleteCustomer(int id)
+        public IHttpActionResult DeleteCustomer(int id)
         {
             if (!ModelState.IsValid)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
@@ -82,6 +82,10 @@ namespace Vidly.Controllers.Api
             }
 
             _context.Customers.Remove(customerInDb);
+            _context.SaveChanges();
+
+
+            return Ok();
         }
 
             
